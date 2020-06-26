@@ -4,7 +4,7 @@
 library("MCMCglmm") # for meta-analysis
 library("dplyr") # for data manipulation
 
-migrationdata <- read.csv(~"migration_metadata.csv", header = T) # import dataset
+migrationdata <- read.csv("migration_metadata.csv", header = T) # import dataset
 View(migrationdata) # have a look at the dataset. Check out the Predictor variable. There are two, time and temperature.
 
 ### Create dataset
@@ -135,7 +135,7 @@ fixedtest <- MCMCglmm (Slope~Migration_distance+Continent, random = ~Species+Loc
 
 ####### Now it's your turn #######
 
-#### Now it’s your turn!
+#### Now itâ€™s your turn!
 
 # 1. Filter the data by rows which have temperature as the predictor
 # 2. Plot the data using a funnel plot
